@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 
 class SignUpController extends GetxController{
+  var obscure = true.obs;
   Future<String> createNewUser(String email, String pass, String name, XFile image) async{
     try{
       final auth = FirebaseAuth.instance;

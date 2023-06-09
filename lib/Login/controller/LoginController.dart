@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class LoginController extends GetxController{
+  var obscure = true.obs;
   void LoginWithEmail(String email, String pass) async{
     try{
       final auth = FirebaseAuth.instance;
